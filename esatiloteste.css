@@ -1,0 +1,253 @@
+ /* Estilos gerais do corpo da página */
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(
+        135deg,
+        #f9f9f9,
+        #ffcb8b3c
+    );
+    background-color: rgba(255, 105, 0, 0.5)
+}
+
+.custom-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030; 
+    transition: transform 0.5s ease-out;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    font-size: larger;
+}
+
+.custom-navbar .btn-search, .barra-busca, .nav-link{
+    color: #ffffff;
+    border-color: #d6700f;
+}
+
+
+.custom-navbar .nav-link:hover, .btn-search:hover {
+    color: rgba(255, 105, 0);
+    text-shadow: 4px 4px 8px #000000;
+}
+
+
+.navbar-hidden {
+    transform: translateY(-100%);  /* Move a navbar para fora da tela */
+    transition: transform 0.5s ease-out;
+}
+
+.home{                          /*estilo pagina home*/
+
+}
+
+/* Estilos para o contêiner do carrossel */
+.carousel-container {
+    position: relative;
+    height: 50vh; /* Altura do carrossel */
+    overflow: hidden; /* Esconde as partes do carrossel fora do container */
+    z-index: 0; /* Carrossel abaixo do menu */
+}
+
+/* Estilos para o carrossel */
+#carouselExampleIndicators {
+    position: absolute;
+    top: 0;
+    width: 100%; /* Largura total do carrossel */
+}
+
+/* Estilos para as imagens do carrossel */
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Redimensiona a imagem para ocupar todo o espaço disponível */
+}
+
+/* Estilos PRODUTO */
+.main-container{
+    width: 90%;
+    margin:auto;
+    min-height: 100px;
+}
+.main-produtos {
+    margin-top: 50px;
+    
+}
+
+.hr {
+    margin-top: 3em;
+}
+container-produtos{
+    background-color: #d6700f;
+    height: 100vh;
+    display: grid;
+    place-items: center center;
+    font-family: 'Poppins',sans-serif;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    padding: 20px;
+    grid-gap: 40px;
+}
+.card{
+    position: relative;
+    background: 
+    linear-gradient(
+        
+            135deg,
+            #a04c0069,
+            #e3670b00
+        ),
+        url(Imagens/home/Produtos/fundoCobre.avif);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+.cards .container{
+    border-radius: 0px 0px 20px 20px;
+    position: relative;
+}
+.card .container img{
+    width: 100%;
+    display: block;
+
+}
+.cards .container:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+}   
+.cards .container{
+    background-image: linear-gradient(
+        135deg,
+        #000000ed,
+        #492916d4
+    );
+}
+.header-card-produto{
+    padding: 20px 10px;
+}
+.header-card-produto>h2{
+    color: #fefefee8;
+    margin: 10px 0 15px 0;
+    text-align: center;
+}
+.header-card-produto>p{
+    color: #a0a0a0;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+/*fim estido cards*/
+
+.localizacao-container{
+    width: 100%;
+    margin-top: 30px;
+    background:
+        linear-gradient(
+        rgba(39, 37, 37, 0.681),rgba(56, 48, 48, 0.255)
+        ),
+        url(Imagens/home/Localizacao/Perini-Business-Park-1.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.localizacao .row {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0 80px 0;
+}
+
+.localizacao .icon-blue {
+    font-size: 24px;
+    color: #007bff;
+    margin-right: 10px;
+}
+        
+        /* Aumentar o tamanho e espaçamento do texto */
+.localizacao .text-large {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.localizacao .col-md-6 {
+    margin: auto;
+}
+
+.localizacao .lista-Principal {
+    width: 95%;
+    color: white;
+    background-color: #000000BA;
+    padding: revert;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+.localizacao .lista-Principal li {
+    margin-bottom: 15px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-image: linear-gradient(
+        283deg, #723a05b3, #462304
+    );
+}
+
+.sobre{                     /*estilo pagina sobre*/
+    
+}
+
+.produtos{                  /*estilo pagina produtos*/
+   
+}
+
+
+.maxhimg{                     /*defir tamanho da imagem*/
+    max-height: 700px;  
+    width: 100%;
+}
+
+.contato {            /*estilo pagina contato*/
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    
+
+}
+
+
+.btn-hover-cont {               /*hover botao contato*/
+    transition: all 0.3s ease; 
+    box-shadow: none; 
+}
+
+.btn-hover-cont:hover {         /*hover botao contato*/
+    background-color: #5a5a5a; 
+    color: #ff6900; 
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.custom-color{
+    border-color: #ff6900
+}

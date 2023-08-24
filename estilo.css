@@ -1,0 +1,342 @@
+ /* Estilos gerais do corpo da página */
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(
+        135deg,
+        #f9f9f9,
+        #fffefce2
+    );
+    /*background-color: rgba(255, 105, 0, 0.5) */
+}
+
+h2{
+    color: 594d4a  ;
+}
+
+.custom-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030; 
+    transition: transform 0.5s ease-out;
+    background-color: rgba(0, 0, 0, 0.65);
+    text-decoration: none;
+    font-size: larger;
+}
+
+.custom-navbar .btn-search, .barra-busca, .nav-link{
+    color: #ffffff;
+    border-color: #d6700f;
+}
+
+
+.custom-navbar .nav-link:hover, .btn-search:hover {
+    color: rgba(255, 105, 0);
+    text-shadow: 4px 4px 8px #000000;
+}
+
+
+.navbar-hidden {
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-out;
+}
+
+.home{                          /*estilo pagina home*/
+
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2.5px solid rgba(245, 121, 5, 0.387);
+}
+
+.width90-center{
+    width: 90%;
+    margin: auto;
+}
+
+.carousel-img {
+    height: 700px;
+    object-fit: cover; 
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        linear-gradient(
+        
+        180deg,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.7)
+        );
+    z-index: 1;
+}
+
+.textoCopyCarrossel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    text-align: initial; 
+    z-index: 2;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.textoCopyCarrossel .destaque {
+    position: relative;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6); /* Cor de fundo preto com opacidade 0.5 */
+    color: rgba(255, 105, 0);
+    padding: 0 6px;
+    z-index: -1; /* Colocar o elemento atrás do texto */
+}
+
+.chamada-destaque-produtos{
+    padding-top: 35px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+    align-items: center;
+    background:
+        linear-gradient(
+            135deg,
+            #000000e3,
+            #272320);    
+    text-align: center;
+    color: rgb(255, 255, 254);
+}
+
+.chamada-destaque-produtos .destaque{
+    background-color: rgba(0, 0, 0, 0.6); /* Cor de fundo preto com opacidade 0.5 */
+    color: rgba(255, 105, 0);
+    font-weight: bold;
+    zoom: 1.2;
+}
+
+.main-produtos{
+    margin-top: 30px;
+}
+
+.card{
+    background: 
+    linear-gradient(
+        
+            135deg,
+            #a04c0069,
+            #e3670b00
+        ),
+        url(Imagens/home/Produtos/fundoCobre.avif);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+    margin: 5px 0;
+    padding: 20px;
+
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.btn-home{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.btn-hover-home {               /*hover botao contato*/
+    transition: all 0.3s ease; 
+    box-shadow: none; 
+}
+
+.btn-hover-home:hover {         /*hover botao contato*/
+    background-color: #5a5a5a; 
+    color: #ff6900; 
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); 
+}
+
+#btnMaisProdutos{
+    padding: 1em;
+    background:
+        linear-gradient(
+            135deg,
+            #453f3fe3,
+            #38332fcc
+        );
+}
+#btnMaisProdutos:hover{
+    background:
+        linear-gradient(
+            135deg,
+            #292626e3,
+            #12110fcc
+        );
+}
+
+/*fim estido cards*/
+
+.localizacao-container{
+    width: 100%;
+    margin-top: 30px;
+    background:
+        linear-gradient(
+        rgba(39, 37, 37, 0.681),rgba(56, 48, 48, 0.255)
+        ),
+        url(img/index/Perini-Business-Park-1.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.localizacao .row {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0 80px 0;
+}
+
+.localizacao .icon-blue {
+    font-size: 24px;
+    color: #007bff;
+    margin-right: 10px;
+}
+        
+        /* Aumentar o tamanho e espaçamento do texto */
+.localizacao .text-large {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.localizacao .col-md-6 {
+    margin: auto;
+}
+
+.localizacao .lista-Principal {
+    width: 95%;
+    color: white;
+    background-color: #000000BA;
+    padding: revert;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+.localizacao .lista-Principal li {
+    margin-bottom: 15px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-image: linear-gradient(
+        283deg, #723a05b3, #462304
+    );
+}
+
+.sobre{                     /*estilo pagina sobre*/
+    
+}
+
+.pagina-titulo{
+    margin-top: 30px;
+}
+
+.conteudo-sobre .destaque{
+    color: rgb(224, 103, 16);
+
+}
+
+.produtos{                  /*estilo pagina produtos*/
+   
+}
+
+.row-produto-container{
+    margin: 30px 0px 30px 0px;
+}
+
+.item-produto-container{
+    width: 90%;
+    margin: 20px auto 20px auto;
+}
+
+.header-detalheProduto .destaque{
+    color: rgb(224, 103, 16);
+}
+
+.titulo-produto-modeloDiametro{
+    margin-bottom: 18px;
+}
+
+.titulo-produto-modeloDiametro h3{
+    font-size: 1.6rem;
+    color: #ff6900; 
+}
+
+.item-produto-imagem{
+    margin-bottom: 20px;
+}
+
+.row-produto-container ul {
+    padding-left: 15px;
+}
+
+.item-produto-modeloDiametro > ul{
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.tituloEspecificacoes{
+    font-weight: bold;
+}
+
+.modeloDiametro-descicao{
+    font-size: 1.1rem;
+}
+
+.modeloDiametro-especificacoes{
+    margin-top: 20px;
+}
+
+.maxhimg{                     /*defir tamanho da imagem*/
+    max-height: 430px;  
+    width: 100%;
+}
+
+.btn-hover-cont {               /*hover botao contato*/
+    transition: all 0.3s ease; 
+    box-shadow: none; 
+}
+
+.btn-hover-cont:hover {         /*hover botao contato*/
+    background-color: #5a5a5a; 
+    color: #ff6900; 
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); 
+}
+.formulario-contato{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.formulario-contato label{
+    color: #ff6900;
+}
+.custom-color{
+    border-color: rgb(224, 103, 16);
+}
