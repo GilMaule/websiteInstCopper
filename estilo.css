@@ -299,7 +299,6 @@ footer{
 }
 
 .item-produto-modeloDiametro > ul{
-    margin-bottom: 30px;
     text-align: justify;
 }
 
@@ -309,10 +308,13 @@ footer{
 
 .modeloDiametro-descicao{
     font-size: 1.1rem;
+    margin-bottom: 50px;
 }
 
-.modeloDiametro-especificacoes{
-    margin-top: 20px;
+.modeloDiametro-titulo{
+    color: #ff6900;
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 
 .maxhimg{                     /*defir tamanho da imagem*/
