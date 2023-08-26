@@ -12,6 +12,7 @@ $(document).ready(function () {
 });
 
 function carregarPagina(busca) {
+    fechaMenuHeader();
     let local = document.querySelector('#paginas')
 
     let requisicao = new XMLHttpRequest();
@@ -30,6 +31,13 @@ document.addEventListener('DOMContentLoaded', function() {
     carregarPagina('home');
 });
 
+function fechaMenuHeader(){
+    var menu = document.getElementById("navbarTogglerDemo02");
+    if (menu.classList.contains("show")) {
+        menu.classList.remove("show");
+    }
+}
+
 $(document).ready(function() {
     var lastScrollTop = 0;
 
@@ -38,6 +46,7 @@ $(document).ready(function() {
         
         if (st < lastScrollTop) {
             // Se estiver rolando para cima
+            fechaMenuHeader();
             $('.custom-navbar').removeClass('navbar-hidden');
         } else {
             // Se estiver rolando para baixo
