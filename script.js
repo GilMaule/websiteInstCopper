@@ -38,6 +38,20 @@ function fechaMenuHeader(){
     }
 }
 
+function goToProdutos(item){
+    console.log("entreouuu");
+    console.log(item);
+    carregarPagina('produtos');
+    debugger;
+    setTimeout(function() {
+        var produtoFioCobreNu = document.getElementById(item);
+        if (produtoFioCobreNu) {
+            produtoFioCobreNu.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, 800); 
+
+}
+
 $(document).ready(function() {
     var lastScrollTop = 0;
 

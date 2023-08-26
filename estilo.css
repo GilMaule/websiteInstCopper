@@ -341,3 +341,13 @@ footer{
 .custom-color{
     border-color: rgb(224, 103, 16);
 }
+
+.cardProduto{
+    /* Estilos padrão do cartão aqui */
+    transition: background-color 0.3s ease; /* Transição suave para a mudança de background */
+}
+
+.cardProduto:hover{
+    background-color: rgba(255, 126, 20, 0.729); /* Altera a cor de fundo ao passar o mouse */
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+}
