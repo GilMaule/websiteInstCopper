@@ -137,8 +137,7 @@ hr {
             135deg,
             #a04c0069,
             #e3670b00
-        ),
-        url(Imagens/home/Produtos/fundoCobre.avif);
+        );
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0,0,0,0.18);
     margin: 5px 0;
