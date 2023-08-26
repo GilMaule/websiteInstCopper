@@ -39,10 +39,7 @@ function fechaMenuHeader(){
 }
 
 function goToProdutos(item){
-    console.log("entreouuu");
-    console.log(item);
     carregarPagina('produtos');
-    debugger;
     setTimeout(function() {
         var produtoFioCobreNu = document.getElementById(item);
         if (produtoFioCobreNu) {
