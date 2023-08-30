@@ -142,7 +142,7 @@ hr {
 }
 
 .btn-home{
-    padding-top: 50px;
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -345,3 +345,42 @@ footer{
       object-fit: cover;
     }
   }
+
+  @media (max-width:1200px){
+    #cardsProdutoHome{
+        width: 100% !important;
+    }
+    .col-lg-5 {
+        -ms-flex: 0 0 45%;
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+    
+ }
+
+  @media (max-width:980px){
+    .col-lg-5 {
+        -ms-flex: 0 0 49%;
+        flex: 0 0 49%;
+        max-width: 49%;
+    }
+ }
+
+ @media (max-width:920px){
+    .col-lg-5 {
+        -ms-flex: 0 0 95%;
+        flex: 0 0 95%;
+        max-width: 95%;
+    }
+ }
+
+ @media (max-width:580px){
+    .col-lg-5 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+ }
+
+
+  
