@@ -346,6 +346,10 @@ footer{
 .social-container {
     margin-top: 40px;
 }
+
+.social-container a{
+    text-decoration: none !important;
+}
   
 .social-icon {
     text-decoration: none;
@@ -387,6 +391,7 @@ footer{
     cursor: pointer;
     color: #e8780f;
 }
+
 .item-social h5{
     font-size: 17px !important;
 }

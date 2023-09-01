@@ -49,6 +49,35 @@ function goToProdutos(item){
 
 }
 
+function enviaDadosFormulario()
+{   
+    var jsonFormulario = getJsonFormulario();
+    console.log("Simulando envio dos dados para o servidor:")
+    console.log(jsonFormulario);
+    limpaCaposFormulario();
+    alert("Obrigado por enviar sua mensagem. Em breve responderemos.");
+}
+
+function limpaCaposFormulario(){
+    document.getElementById("contactForm").reset();
+}
+
+function getJsonFormulario(){
+    var nome = $('#nome').val();
+    var email = $('#email').val();
+    var assunto = $('#assunto').val();
+    var mensagem = $('#mensagem').val();
+    let formData = $(this).serialize(); // captura os dados do formulário
+
+    var jsonFormulario ={
+		"nome": nome,
+		"email": email,
+		"assunto": assunto,
+		"mensagem": mensagem
+    };
+    return jsonFormulario;
+}  
+
 $(document).ready(function() {
     var lastScrollTop = 0;
 
