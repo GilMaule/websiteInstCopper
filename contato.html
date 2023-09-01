@@ -4,29 +4,75 @@
 
     <div class="pagina-titulo">
         <div class="contato-texto-titulo width90-center">
-            <h2 style="margin-left: 30px">Fale conosco!</h2>
+            <h2 style="margin-left: 30px">Nossos contatos</h2>
         </div>
     </div>
 
     <div class="width90-center"><hr class="hr" /> </div>
 
-    <div class="formulario-contato centered-form">
-        <div class="mb-3 w-75 mx-auto p-5 rounded border border-dark">
-            <label for="nameInput" class="form-label">Nome</label>
-            <input type="text" class="form-control custom-color" id="nameInput" placeholder="Digite seu nome"><br>
+    <div class="contato-container width90-center com-sm-12 col-md-10">
+        <div class="texto-contatos texto-chamada" style="margin-top: 30px; text-align: justify;" >
+            <p> Siga-nos em nossas mídias socias e acompanhe de perto um pouco mais do nosso trabalho.  Além disso, desejamos te conhecer melhor e poder te atender de forma mais rápida e mais assertiva.
+                A Copper está sempre perto de você, seja através das nossas mídias sociais, email ou telefone. Entre em contato cosco!
+            </p>
+        </div>
 
-            <label for="emailInput" class="form-label">Email address</label>
-            <input type="email" class="form-control custom-color" id="emailInput" placeholder="name@example.com"><br>
-
-            <label for="assuntoInput" class="form-label ">Assunto</label>
-            <input type="text" class="form-control custom-color" id="assuntoInput" placeholder="Digite o Assunto"><br>
-
-            <label for="mensagemImput" class="form-label">Mensagem</label><br>
-            <textarea class="form-control custom-color" id="mensagem" placeholder="Digite sua Mensagem"
-                rows="3"></textarea><br>
-
-            <button type="submit" class="btn btn-secondary border-dark btn-hover-cont">Enviar</button>
+        <div class="midias-sociais-container">
+            <div class="row social-container">
+                    <div class="item-social col-sm-12 col-lg-2" id="instagram">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram" id="iconeInstagram"></i></a>
+                        <h5><span id="linkInstagram">/metalgroupoficial</span></h5>
+                    </div>
+                    <div class="item-social col-sm-12 col-lg-2">
+                        <a href="#" class="social-icon "><i class="fab fa-facebook" id="iconeFacebook"></i></a>
+                        <h5><span id="linkFaceBook">/metalgroupoficial</span></h5>
+                    </div>
+                    <div class="item-social col-sm-12 col-lg-2">
+                        <a href="#" class="social-icon"> <i class="fab fa-linkedin" id="iconeLinkedin"></i></a>
+                        <h5><span id="userLinkedin">/metalgroupoficial</span></h5>
+                    </div>
+                    <div class="item-social col-sm-12 col-lg-2">
+                        <a href="#" class="social-icon"> <i class="fa fa-phone" id="iconeTelefone"></i></a>
+                        <h5><span id="numerotelefone">(47) 3305-5000</span></h5>
+                    </div>
+                    <div class="item-social col-sm-12 col-md-6 col-lg-2">
+                        <a href="#" class="social-icon"> <i class="fa fa-envelope" id="iconeEmail"></i></a>
+                        <h5><span id="enderecoEmail">contato@metalgroup.com.br</span></h5>
+                    </div>
+            </div>
         </div>
     </div>
+
+        <div class="form-container formulario-contato mt-5 com-sm-12 col-md-10">
+            <div class="card mx-auto" style="border-color: #22201f !important;">
+                <div class="card-header">
+                    <h4>Formulário de Contato <i class="fa fa-envelope" style="margin-left: 15px; font-size: 1.1em;" aria-hidden="true"></i></h4>
+                </div>
+                    <div class="card-body">
+                        <form id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="nome" class="required-label">Nome:</label>
+                                    <input type="text" class="form-control custom-color" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="email" class="required-label">E-mail:</label>
+                                    <input type="email" class="form-control custom-color" id="email" name="email" placeholder="Digite seu e-mail" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="assunto" class="required-label">Assunto:</label>
+                                <input type="text" class="form-control custom-color" id="assunto" name="assunto" placeholder="Sobre qual assunto deseja falar" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem" class="required-label">Mensagem:</label>
+                                <textarea class="form-control custom-color" id="mensagem" name="mensagem" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-secondary border-dark btn-hover-cont">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    
 </div>
 <div class="width90-center"><hr class="hr" /> </div>

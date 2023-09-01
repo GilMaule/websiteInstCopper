@@ -122,7 +122,7 @@ hr {
     margin-top: 30px;
 }
 
-.card{
+.home .card{
     background: 
     linear-gradient(
         
@@ -263,7 +263,7 @@ footer{
     margin: 20px auto 20px auto;
 }
 
-.header-detalheProduto .destaque{
+.header-detalheProduto .destaque, .contato-container .destaque{
     color: rgb(224, 103, 16);
 }
 
@@ -292,7 +292,7 @@ footer{
     font-weight: bold;
 }
 
-.modeloDiametro-descicao{
+.texto-chamada{
     font-size: 1.1rem;
     margin-bottom: 50px;
 }
@@ -308,7 +308,8 @@ footer{
     width: 100%;
 }
 
-.btn-hover-cont {      
+.btn-hover-cont {
+    font-size: 1.15em;
     transition: all 0.3s ease; 
     box-shadow: none; 
 }
@@ -319,14 +320,14 @@ footer{
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); 
 }
 .formulario-contato{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px auto 50px auto;
 }
 .formulario-contato label{
-    color: #ff6900;
+    color: rgb(205, 102, 29);
+    font-size: 1.2em;
 }
 .custom-color{
-    border-color: rgb(224, 103, 16);
+    border-color:  rgb(205, 102, 29);
 }
 
 .cardProduto{
@@ -336,6 +337,115 @@ footer{
 .cardProduto:hover{
     background-color: rgba(255, 126, 20, 0.729);
     cursor: pointer;
+}
+
+.contato-container{
+    margin-top: 30px;
+}
+
+.social-container {
+    margin-top: 40px;
+}
+  
+.social-icon {
+    text-decoration: none;
+    font-size: 35px;
+    color: #965403;
+}
+
+#iconeInstagram:hover {
+    color: #E1306C;
+    font-size: 1.05em;
+}
+
+#iconeFacebook:hover {
+    color: #3b5998;
+    font-size: 1.05em;
+}
+
+#iconeLinkedin:hover {
+    color: #0e76a8;
+    font-size: 1.05em;
+}
+
+.social-container span{
+    color: #ba6b22; 
+}
+
+#iconeTelefone:hover
+{
+    color: #472f17;
+    font-size: 1.05em; 
+}
+
+#iconeEmail:hover{
+    color: #e8780f;
+    font-size: 1.05em;
+}
+
+.social-container span:hover{
+    cursor: pointer;
+    color: #e8780f;
+}
+.item-social h5{
+    font-size: 19px !important;
+}
+
+.required-label::after {
+    content: " *";
+    color: red;
+}
+::placeholder {
+    font-size: 0.9em;
+    opacity: 0.7;
+}
+
+.formulario-contato .card-header{
+    background:
+        linear-gradient(
+            175deg,
+            #151414cf,
+            #262323bd);    
+    color: rgb(255, 255, 254);
+}
+
+.formulario-contato .card-body{
+    border-color: #22201f;
+}
+
+@media (min-width: 1220px) {
+    .social-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .item-social {
+        text-align: center;
+        
+    }
+
+    .item-social h5 {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1220px) {
+    .social-container {
+        display: block;
+    }
+
+    .item-social {
+        text-align: left;
+        margin: 20px 20px 20px 60px;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .item-social h5 {
+        vertical-align: super;
+        display: inline;
+        margin-left: 10px;
+    }
 }
 
 @media (max-width: 980px) {
