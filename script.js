@@ -1,14 +1,27 @@
-$(document).ready(function () {
+var linkInstagram = "https://www.instagram.com/metalgroupoficial/";
+var linkFaceBook = "https://www.facebook.com/metalgroupoficial";
+var linkLinkedin = "https://www.linkedin.com/company/metalgroupoficial/";
+var foneContato = "4733055000";
+var emailContato = "contato@metalgroup.com.br";
 
-    $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
-        if (scroll > 140) {
-            $('header').addClass('header-scroll');
+$(document).ready(function() {
+    var lastScrollTop = 0;
+   
+    $(window).on('scroll', function() {
+        var st = $(this).scrollTop();
+        
+        if (st < lastScrollTop) {
+            // Se estiver rolando para cima
+            fechaMenuHeader();
+            $('.custom-navbar').removeClass('navbar-hidden');
         } else {
-            $('header').removeClass('header-scroll');
+            if(st > 360)
+            // Se estiver rolando para baixo
+            $('.custom-navbar').addClass('navbar-hidden');
         }
-    });
 
+        lastScrollTop = st;
+    });
 });
 
 function carregarPagina(busca) {
@@ -78,21 +91,26 @@ function getJsonFormulario(){
     return jsonFormulario;
 }  
 
-$(document).ready(function() {
-    var lastScrollTop = 0;
+function redirecionarInstagram() {
+    window.location.href = linkInstagram;
+}
 
-    $(window).on('scroll', function() {
-        var st = $(this).scrollTop();
-        
-        if (st < lastScrollTop) {
-            // Se estiver rolando para cima
-            fechaMenuHeader();
-            $('.custom-navbar').removeClass('navbar-hidden');
-        } else {
-            // Se estiver rolando para baixo
-            $('.custom-navbar').addClass('navbar-hidden');
-        }
+// Função para redirecionar para o Facebook
+function redirecionarFacebook() {
+    window.location.href = linkFaceBook;
+}
 
-        lastScrollTop = st;
-    });
-});
+// Função para redirecionar para o LinkedIn
+function redirecionarLinkedin() {
+    window.location.href = linkLinkedin
+}
+
+// Função para redirecionar para o telefone
+function redirecionarTelefone() {
+    window.location.href = "tel:+55" + foneContato;
+}
+
+// Função para redirecionar para o e-mail
+function redirecionarEmail() {
+    window.location.href = "mailto:" + emailContato;
+}

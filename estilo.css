@@ -241,6 +241,21 @@ footer{
     );
 }
 
+footer .fab{
+    color: #fbf4f4;
+    font-size: 30px;
+    margin: 8px;
+}
+
+.fone-footer a{
+    color: rgb(181 167 155);
+    text-decoration: none !important;
+}
+
+footer .fab:hover, .fone-footer a:hover{
+    color: #e16b00;
+}
+
 .pagina-titulo{
     margin-top: 30px;
 }
