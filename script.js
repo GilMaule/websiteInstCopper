@@ -1,8 +1,3 @@
-var linkInstagram = "https://www.instagram.com/metalgroupoficial/";
-var linkFaceBook = "https://www.facebook.com/metalgroupoficial";
-var linkLinkedin = "https://www.linkedin.com/company/metalgroupoficial/";
-var foneContato = "4733055000";
-var emailContato = "contato@metalgroup.com.br";
 
 $(document).ready(function() {
     var lastScrollTop = 0;
@@ -65,8 +60,6 @@ function goToProdutos(item){
 function enviaDadosFormulario()
 {   
     var jsonFormulario = getJsonFormulario();
-    console.log("Simulando envio dos dados para o servidor:")
-    console.log(jsonFormulario);
     limpaCaposFormulario();
     alert("Obrigado por enviar sua mensagem. Em breve responderemos.");
 }
@@ -90,27 +83,3 @@ function getJsonFormulario(){
     };
     return jsonFormulario;
 }  
-
-function redirecionarInstagram() {
-    window.location.href = linkInstagram;
-}
-
-// Função para redirecionar para o Facebook
-function redirecionarFacebook() {
-    window.location.href = linkFaceBook;
-}
-
-// Função para redirecionar para o LinkedIn
-function redirecionarLinkedin() {
-    window.location.href = linkLinkedin
-}
-
-// Função para redirecionar para o telefone
-function redirecionarTelefone() {
-    window.location.href = "tel:+55" + foneContato;
-}
-
-// Função para redirecionar para o e-mail
-function redirecionarEmail() {
-    window.location.href = "mailto:" + emailContato;
-}
